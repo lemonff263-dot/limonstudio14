@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>LIMON — Web Design &amp; Development Studio</title><meta name="description" content="LIMON — independent web atelier. Custom, fast, mobile-first websites, landing pages, food ordering and web app frontends."/><meta name="theme-color" content="#0d0e12"/><meta property="og:title" content="LIMON — Independent Web Atelier"/><meta property="og:description" content="Digital experiences that make brands impossible to ignore."/><meta property="og:type" content="website"/><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%230d0e12%27/%3E%3Ctext x=%2732%27 y=%2745%27 font-size=%2740%27 font-weight=%27800%27 text-anchor=%27middle%27 fill=%27%23caf300%27 font-family=%27sans-serif%27%3EL%3C/text%3E%3C/svg%3E"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}section[id]{scroll-margin-top:84px}.material-symbols-outlined{font-variation-settings:"FILL" 0,"wght" 400;font-family:"Material Symbols Outlined";font-weight:normal;font-style:normal;display:inline-block;line-height:1;letter-spacing:normal;text-transform:none;white-space:nowrap;direction:ltr;-webkit-font-feature-settings:"liga";font-feature-settings:"liga"}input[type=number]{-moz-appearance:textfield}input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}#toast{transition:all .3s ease}button,a{-webkit-tap-highlight-color:transparent}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#e3e2e8", "primary-fixed-dim": "#b0d500", "tertiary-fixed": "#c3f400", "error-container": "#93000a", "surface-tint": "#b0d500", "on-tertiary": "#283500", "surface-container-low": "#1a1b20", "on-primary": "#2a3400", "surface-container-highest": "#343439", "on-secondary-container": "#a7b6cc", "surface-dim": "#121317", "tertiary-fixed-dim": "#abd600", "outline": "#8f9378", "secondary-fixed": "#d4e4fa", "inverse-primary": "#536600", "on-secondary-fixed-variant": "#39485a", "surface-variant": "#343439", "on-primary-fixed": "#171e00", "on-secondary": "#233143", "primary-container": "#caf300", "on-secondary-fixed": "#0d1c2d", "surface-container": "#1f1f24", "on-primary-container": "#596c00", "on-error": "#690005", "on-primary-fixed-variant": "#3e4c00", "background": "#121317", "on-tertiary-fixed-variant": "#3c4d00", "outline-variant": "#444932", "surface-container-high": "#292a2e", "secondary-fixed-dim": "#b9c8de", "primary-fixed": "#caf300", "tertiary-container": "#c3f400", "surface-container-lowest": "#0d0e12", "secondary-container": "#39485a", "inverse-on-surface": "#2f3035", "inverse-surface": "#e3e2e8", "on-surface-variant": "#c5c9ac", "surface-bright": "#38393e", "on-error-container": "#ffdad6", "on-surface": "#e3e2e8", "on-tertiary-container": "#556d00", "tertiary": "#ffffff", "on-tertiary-fixed": "#161e00", "secondary": "#b9c8de", "error": "#ffb4ab", "surface": "#121317", "primary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "space-lg": "1.75rem", "gutter-desktop": "2.5rem", "margin": "1.25rem", "space-xs": "0.25rem", "margin-tablet": "2.5rem", "margin-desktop": "4.5rem", "space-sm": "0.5rem", "space-xl": "3rem", "space-2xl": "5rem", "gutter": "1.5rem", "space-3xl": "8rem" }, "fontFamily": { "label-mono-sm": [ "Space Mono" ], "display-xl": [ "Syne" ], "body-lg": [ "Manrope" ], "headline-lg-mobile": [ "Syne" ], "body-sm": [ "Manrope" ], "display-xl-mobile": [ "Syne" ], "body-md": [ "Manrope" ], "headline-lg": [ "Syne" ], "headline-sm": [ "Syne" ], "headline-md": [ "Syne" ], "label-mono-lg": [ "Space Mono" ] }, "fontSize": { "label-mono-sm": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.12em", "fontWeight": "400" } ], "display-xl": [ "5.5rem", { "lineHeight": "5.75rem", "letterSpacing": "-0.04em", "fontWeight": "800" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-lg-mobile": [ "2.25rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.4rem", "letterSpacing": "0.01em", "fontWeight": "400" } ], "display-xl-mobile": [ "3rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "body-md": [ "1rem", { "lineHeight": "1.6rem", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg": [ "3.5rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-sm": [ "1.5rem", { "lineHeight": "1.8rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "2.25rem", { "lineHeight": "2.6rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-mono-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.08em", "fontWeight": "700" } ] } } } };</script></head><body id="top" class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-20 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" href="#top" aria-label="LIMON home"><img alt="LIMON Wordmark Logo" class="h-8 w-auto object-contain" onerror="this.style.display='none'" src="https://lh3.googleusercontent.com/aida/AEtjO1WvosqPkQ9sXRCY6IKOa1V4q2MxwKEBPc-yEbU_0zXamw56IW8SaSMUXITV7J0MKDF8yJPvb2ga9zCyu5WimpNARp4xkEy81fddVjnbM56sNTtwz_bN8F9FVlG3n1LG0G1pCuR-evya6BmU5MDG926kkEnAz4wNquRo55zKfAOnYnSaVV22StDK5JvtQybSmsN_QfZxVV_2yDGYCTNtFk4BPNmF0yxhxAYFDJCA1-UGDvk0mEMtvivhvA"/><span class="font-headline-sm text-headline-sm uppercase tracking-tighter text-on-surface hidden sm:inline-block">LIMON</span></a><div class="hidden xl:flex items-center gap-space-xs py-space-xs px-space-md rounded-full bg-surface-container-low"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span></span><span class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant">Available for New Projects</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary-container font-bold"><a class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="work" href="#work">Work</a><a class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="services" href="#services">Services</a><a class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="about" href="#about">About</a><a class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="pricing" href="#pricing">Pricing</a><a class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="process" href="#process">Process</a></nav><div class="flex items-center gap-space-md"><a class="group relative inline-flex items-center justify-center px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-mono-lg text-label-mono-lg uppercase transition-all duration-300 hover:shadow-[0_0_24px_rgba(202,243,0,0.35)]" data-path="contact" href="#contact"><span>Let's Talk</span></a><a href="#about" aria-label="About Limon" class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></a></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- Mobile Drawer Overlay Menu (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/95 backdrop-blur-2xl transition-all duration-300 opacity-0 pointer-events-none flex flex-col justify-between p-margin" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase tracking-tighter text-on-surface">LIMON<span class="text-primary-container">.</span></span>
+</div>
+<button aria-label="Close menu" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:text-primary-container focus:outline-none" id="close-nav-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-md py-space-xl">
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant uppercase tracking-widest">[ Navigation Deck ]</span>
+<a class="nav-drawer-link font-headline-md text-headline-md text-on-surface hover:text-primary-container transition-colors" href="#work">Work</a>
+<a class="nav-drawer-link font-headline-md text-headline-md text-on-surface hover:text-primary-container transition-colors" href="#services">Services</a>
+<a class="nav-drawer-link font-headline-md text-headline-md text-on-surface hover:text-primary-container transition-colors" href="#process">Process</a>
+<a class="nav-drawer-link font-headline-md text-headline-md text-on-surface hover:text-primary-container transition-colors" href="#pricing">Pricing</a>
+<a class="nav-drawer-link font-headline-md text-headline-md text-on-surface hover:text-primary-container transition-colors" href="#about">About</a>
+<a class="nav-drawer-link font-headline-md text-headline-md text-on-surface hover:text-primary-container transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-md bg-surface-container-low/50 p-space-md rounded-xl">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono-sm text-label-mono-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</span>
+<span>DIRECT COMM CHANNEL</span>
+</div>
+<a class="font-label-mono-sm text-label-mono-sm text-primary-container font-bold break-all" href="mailto:limonstudio14@gmail.com">limonstudio14@gmail.com</a>
+</div>
+</div>
+<!-- Mobile Quick Action & Mobile Menu Trigger Bar -->
+<div class="px-margin pt-space-sm flex items-center justify-between lg:hidden">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</span>
+<span class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant">Available for Projects</span>
+</div>
+<button aria-label="Open directory" class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-mono-sm text-label-mono-sm uppercase" id="open-nav-btn">
+<span>Menu</span>
+<span class="material-symbols-outlined text-[18px]">menu</span>
+</button>
+</div>
+<!-- Hero Section -->
+<section class="px-margin pt-space-lg pb-space-2xl relative overflow-hidden flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-xs">
+<div class="w-1.5 h-1.5 rounded-full bg-primary-container"></div>
+<span class="font-label-mono-sm text-label-mono-sm uppercase tracking-widest text-primary-container font-bold">Independent Web Atelier</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tight text-on-surface">
+        Digital experiences that make brands <span class="text-primary-container italic font-normal">impossible</span> to ignore.
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        I design and build modern, high-performance websites that help businesses stand out, build trust, and turn visitors into devoted customers.
+      </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-sm pt-space-xs">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-lg bg-primary-container text-on-primary-container font-label-mono-lg text-label-mono-lg uppercase font-bold shadow-[0_0_20px_rgba(202,243,0,0.25)] hover:shadow-[0_0_30px_rgba(202,243,0,0.4)] transition-all" href="#work">
+<span>Explore Selected Work</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-lg bg-surface-container-high text-on-surface font-label-mono-lg text-label-mono-lg uppercase font-bold hover:bg-surface-container-highest transition-colors" href="#contact">
+<span>Start a Project</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Standards Pillars: 3 Quick Metric Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">terminal</span>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface font-bold">Modern Web Standards</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Clean semantic HTML/CSS</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">smartphone</span>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface font-bold">Mobile-First Layouts</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Thumb-crafted tactile UX</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">speed</span>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface font-bold">Fast Load Speeds</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sub-second render targets</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Work / Projects Universe -->
+<section class="px-margin py-space-2xl bg-surface-container-lowest flex flex-col gap-space-lg" id="work">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container uppercase tracking-widest">[ SELECTED CONCEPTS • PROTOTYPE SHOWCASE ]</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Interactive Work</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Tactile web prototypes demonstrating responsive fluid mechanics, custom grid layouts, and high-conversion e-commerce flow.
+      </p>
+</div>
+<!-- Project Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs scrollbar-none">
+<button class="project-tab-btn px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-mono-sm text-label-mono-sm uppercase font-bold whitespace-nowrap transition-colors" data-project="0">
+        01 • Noir Atelier
+      </button>
+<button class="project-tab-btn px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-mono-sm text-label-mono-sm uppercase whitespace-nowrap transition-colors" data-project="1">
+        02 • The Bengal Table
+      </button>
+<button class="project-tab-btn px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-mono-sm text-label-mono-sm uppercase whitespace-nowrap transition-colors" data-project="2">
+        03 • Nexora Digital
+      </button>
+</div>
+<!-- Active Showcase Card -->
+<div class="rounded-xl overflow-hidden bg-surface-container flex flex-col shadow-xl" id="project-card">
+<!-- Media Viewport -->
+<div class="relative w-full aspect-[16/10] bg-surface-container-highest overflow-hidden">
+<img alt="Noir Atelier luxury haute couture digital showcase concept on laptop display" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" id="project-hero-img" onerror="this.onerror=null;this.src=window.__art(0)" src="https://lh3.googleusercontent.com/aida/AEtjO1Vs2B-rZkKOBH3-z006p_Yiu0NOnFuHzVRCeYeVwrOnvdqXtGSPvTDpyXg0QSf3rykq9WUw8b0BpdpQp_ygMX8Kx6X3ubngrvcEm7vFfJ8b2kEkhnjZxajZpBY2eBtxqj5AXLni7ALcCYGT0V1c387jI4RuEpTP0_WYhjBxH7gXuL-2xN3uajm21OunJ4Cr1G5CtWhONRRXXAKeDxxHnoq2rWY_0ruoyehcVXS0n8A2ukKllI4jMpU85A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-80 pointer-events-none"></div>
+<!-- HUD Tag -->
+<div class="absolute top-space-sm left-space-sm px-space-sm py-space-xs rounded-lg bg-surface-container-lowest/80 backdrop-blur-md flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface font-bold uppercase" id="project-category-hud">E-Commerce • Editorial Concept</span>
+</div>
+</div>
+<!-- Project Metadata & Copy -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container" id="project-index">PROTOTYPE 01 / 03</span>
+<h3 class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface uppercase" id="project-title">NOIR ATELIER</h3>
+</div>
+<div class="p-space-xs rounded-full bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant" id="project-desc">
+          Sculptural high-fashion online atelier featuring editorial masonry grids, custom typography sizing, and tactile product previews engineered for dark UI connoisseurs.
+        </p>
+<!-- Tech Pills -->
+<div class="flex flex-wrap gap-space-xs" id="project-pills">
+<span class="px-space-sm py-space-xs rounded-md bg-surface-container-high text-on-surface font-label-mono-sm text-label-mono-sm">Editorial Grid</span>
+<span class="px-space-sm py-space-xs rounded-md bg-surface-container-high text-on-surface font-label-mono-sm text-label-mono-sm">Headless Layout</span>
+<span class="px-space-sm py-space-xs rounded-md bg-surface-container-high text-on-surface font-label-mono-sm text-label-mono-sm">Mobile-First</span>
+</div>
+<!-- Action / Demo Status -->
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-container">info</span>
+            Demo Prototype Preview
+          </span>
+<button id="explore-btn" type="button" class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-on-surface hover:text-primary-container font-label-mono-sm text-label-mono-sm uppercase font-bold flex items-center gap-space-xs transition-colors">
+<span>Explore Code</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Other projects (rendered by JS) -->
+<div class="grid grid-cols-1 gap-space-sm pt-space-xs" id="project-others"></div>
+</section>
+<!-- Capabilities / Services Section -->
+<section class="px-margin py-space-2xl flex flex-col gap-space-lg" id="services">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container uppercase tracking-widest">[ WHAT I CRAFT ]</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Design &amp; Engineering Capabilities</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Every website is bespoke. No clunky drag-and-drop page builders, no template bloat. Pure tailored craft built for speed.
+      </p>
+</div>
+<div class="grid grid-cols-1 gap-space-md">
+<!-- Capability 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-sm shadow-sm hover:bg-surface-container transition-all">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">devices</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Custom Business Website Design</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Immersive brand portfolios, corporate showcases, and firm identities tailored to cement authority and convert visitors from minute one.
+        </p>
+<div class="pt-space-xs flex items-center gap-space-xs font-label-mono-sm text-label-mono-sm text-primary-container font-bold">
+<span>RESPONSIVE • SEO-READY • BESPOKE</span>
+</div>
+</div>
+<!-- Capability 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-sm shadow-sm hover:bg-surface-container transition-all">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">ads_click</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">High-Converting Landing Pages</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Precision funnel architecture built for product releases, SaaS registrations, or marketing campaigns with frictionless CTA pathways.
+        </p>
+<div class="pt-space-xs flex items-center gap-space-xs font-label-mono-sm text-label-mono-sm text-primary-container font-bold">
+<span>A/B TESTED • ZERO LATENCY</span>
+</div>
+</div>
+<!-- Capability 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-sm shadow-sm hover:bg-surface-container transition-all">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">restaurant_menu</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Restaurant &amp; Food Ordering</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Interactive digital menus, reservation booking workflows, and mobile table-side ordering interfaces that stimulate taste and drive tickets.
+        </p>
+<div class="pt-space-xs flex items-center gap-space-xs font-label-mono-sm text-label-mono-sm text-primary-container font-bold">
+<span>INTUITIVE CART • MOBILE ORDERING</span>
+</div>
+</div>
+<!-- Capability 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-sm shadow-sm hover:bg-surface-container transition-all">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">E-Commerce &amp; Storefronts</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Editorial-grade product galleries, rapid checkout integrations, and bespoke catalog filtering for high-end boutique brands.
+        </p>
+<div class="pt-space-xs flex items-center gap-space-xs font-label-mono-sm text-label-mono-sm text-primary-container font-bold">
+<span>SECURE TRANSACTIONS • HEADLESS</span>
+</div>
+</div>
+<!-- Capability 5 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-sm shadow-sm hover:bg-surface-container transition-all">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">dashboard_customize</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Web Application Frontends</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Clean dashboard UI, interactive financial charts, and responsive portals engineered with crisp state transitions and fluid telemetry.
+        </p>
+<div class="pt-space-xs flex items-center gap-space-xs font-label-mono-sm text-label-mono-sm text-primary-container font-bold">
+<span>DATA VIZ • COMPONENT SYSTEMS</span>
+</div>
+</div>
+<!-- Capability 6 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-sm shadow-sm hover:bg-surface-container transition-all">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">rocket_launch</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">UI/UX &amp; Speed Optimization</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Audit of existing digital setups, ruthless bloat elimination, Lighthouse 95+ performance tune-ups, and accessibility hardening.
+        </p>
+<div class="pt-space-xs flex items-center gap-space-xs font-label-mono-sm text-label-mono-sm text-primary-container font-bold">
+<span>AUDIT • CORE WEB VITALS</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy / Why Bespoke Craft -->
+<section class="px-margin py-space-2xl bg-surface-container-lowest flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container uppercase tracking-widest">[ CODE PHILOSOPHY ]</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Defying the Commodity Web</h2>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary-container text-[24px] flex-shrink-0">check_circle</span>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Zero Generic Presets</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Templates make your company look like everyone else. Bespoke styling creates memorable visual equity.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary-container text-[24px] flex-shrink-0">touch_app</span>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Built for Thumbs First</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Over 70% of modern web traffic is handheld. I design comfortable, tap-friendly tap zones that naturally engage.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary-container text-[24px] flex-shrink-0">auto_awesome</span>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Meaningful Fluidity</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Interactivity should delight, never distract. Sub-pixel micro-animations guide the visitor's subconscious journey.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary-container text-[24px] flex-shrink-0">verified</span>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Aesthetic Clarity Sells</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Speed is the first feature. A site that loads in 400ms wins customer attention before competitors finish rendering.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How We Build Together (Process) -->
+<section class="px-margin py-space-2xl flex flex-col gap-space-lg" id="process">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container uppercase tracking-widest">[ HOW WE WORK ]</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Agile, Transparent Cadence</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        A streamlined 4-stage pipeline that takes you from concept spark to launch without unnecessary agency meetings.
+      </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Step 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container font-bold">PHASE 01</span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant">WEEK 01</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Architecture &amp; Positioning</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          We crystallize your core message, map out conversion goals, and sketch user pathways into wireframe blueprints.
+        </p>
+</div>
+<!-- Step 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container font-bold">PHASE 02</span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant">WEEK 02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">UI &amp; Interactive Prototyping</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Crafting high-fidelity mobile &amp; desktop visuals, type hierarchies, and clickable prototypes for your immediate review.
+        </p>
+</div>
+<!-- Step 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container font-bold">PHASE 03</span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant">WEEKS 03-04</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Clean Production Code</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Translating approved designs into lightning-fast, accessible code with bespoke micro-interactions and seamless forms.
+        </p>
+</div>
+<!-- Step 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container font-bold">PHASE 04</span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant">WEEK 05</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Review, SEO &amp; Launch</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Cross-browser testing, SEO metadata integration, analytics wiring, and painless domain deployment with client handoff training.
+        </p>
+</div>
+</div>
+</section>
+<!-- Packages & Scope (Pricing) -->
+<section class="px-margin py-space-2xl bg-surface-container-lowest flex flex-col gap-space-lg" id="pricing">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container uppercase tracking-widest">[ TRANSPARENT SCOPES ]</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Investment &amp; Packages</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        No hidden fees or bloated retainers. Fair value for elite craftsmanship.
+      </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Tier 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md shadow-md">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant uppercase">Foundation Tier</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Starter Web</h3>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container">$2,400</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Ideal for emerging brands, freelance consultancies, and independent professionals who need a stellar one-pager or multi-section landing.
+        </p>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[18px]">check</span> Custom Mobile-First Layout</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[18px]">check</span> High-Speed Semantic Code</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[18px]">check</span> Inquiry Form + Direct Routing</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[18px]">check</span> Delivered in 10-14 days</li>
+</ul>
+<a data-tier="Starter Web" class="tier-btn w-full py-space-sm rounded-lg bg-surface-container-high text-on-surface hover:text-primary-container font-label-mono-lg text-label-mono-lg uppercase font-bold text-center transition-colors" href="#contact">
+          Request This Scope
+        </a>
+</div>
+<!-- Tier 2 (Highlighted) -->
+<div class="p-space-lg rounded-xl bg-surface-container-high flex flex-col gap-space-md shadow-xl relative overflow-hidden">
+<div class="w-full flex justify-between items-center">
+<span class="px-space-sm py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-mono-sm text-label-mono-sm font-bold uppercase">Most Selected</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container">$4,800</span>
+</div>
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant uppercase">Full Presence</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Growth Platform</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Complete multi-page web presence for scaling ventures, eateries, and modern service businesses seeking undeniable market presence.
+        </p>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[18px]">check</span> Up to 6 Custom Tailored Pages</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[18px]">check</span> Interactive Product / Menu Showcases</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[18px]">check</span> Advanced Micro-animations &amp; HUD elements</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[18px]">check</span> Lighthouse 95+ Core Web Vitals Guarantee</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[18px]">check</span> Delivered in 3-4 weeks</li>
+</ul>
+<a data-tier="Growth Platform" class="tier-btn w-full py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-mono-lg text-label-mono-lg uppercase font-bold text-center shadow-[0_0_20px_rgba(202,243,0,0.25)] transition-all" href="#contact">
+          Request This Scope
+        </a>
+</div>
+<!-- Tier 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md shadow-md">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant uppercase">Bespoke System</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Custom / Web App</h3>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Custom</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Tailored SaaS interfaces, bespoke e-commerce engines, headless database CMS connections, and complex dynamic state management.
+        </p>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[18px]">check</span> Complex Architectural Scoping</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[18px]">check</span> Full Component Design Library</li>
+<li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[18px]">check</span> Custom API &amp; Dashboard Integrations</li>
+</ul>
+<a data-tier="Custom Application" class="tier-btn w-full py-space-sm rounded-lg bg-surface-container-high text-on-surface hover:text-primary-container font-label-mono-lg text-label-mono-lg uppercase font-bold text-center transition-colors" href="#contact">
+          Discuss Custom Scope
+        </a>
+</div>
+</div>
+</section>
+<!-- About the Developer -->
+<section class="px-margin py-space-2xl flex flex-col gap-space-lg" id="about">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container uppercase tracking-widest">[ ARCHITECT PROFILE ]</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Direct Creator Craft</h2>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container-low p-space-md flex flex-col gap-space-md shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container-highest flex-shrink-0">
+<img onerror="this.style.display='none'" class="w-full h-full object-cover" data-alt="Intimate editorial portrait of Limon, an Asian digital product designer and creative technologist in a dark studio wearing a minimal black collar shirt, warm directional key light, cinematographic photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlINdcw_cI0TWYXpBo4lBHOo_4-Ukc_EJtzGOn5AKsaoA6x4OStYSIoFSdHyxaRY9dlDjiTjT0l_L4MA1d23yHdz4S3-fp48qGuEgvwc5vnswpqS0dSdekuNfMB74eB4FWV5TyBMOCD4xNH1xGyAw-OwiuTzZvXJPvUASrawUuEX8CcrZKn77gwdw10iimtASRX_gxHz6fZAJ1ku6eqS_4rudcPWqouZzaPtR5yxWvFx_UsKZOEzVW"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container uppercase font-bold">Limon</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Founder &amp; Developer</span>
+<a href="mailto:limonstudio14@gmail.com" class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container break-all">limonstudio14@gmail.com</a>
+</div>
+</div>
+<p class="font-headline-sm text-headline-sm italic text-on-surface font-light">
+        "Small details. Bold ideas. Better digital experiences."
+      </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        When you collaborate with LIMON, you work directly with me. No junior designers, no layers of project managers or miscommunicated requests. Every layout is personally drafted, tested, and coded by an engineer who cares about typography, speed, and real revenue impact.
+      </p>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container font-bold">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Custom Code</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container font-bold">&lt; 0.5s</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Target Speeds</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Inquiry Section -->
+<section class="px-margin py-space-2xl bg-surface-container-lowest flex flex-col gap-space-lg" id="contact">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container uppercase tracking-widest">[ TRANSMIT INQUIRY ]</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Have a vision? Let's build something remarkable.</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Fill out this brief transmission or send an email directly to
+        <a class="text-primary-container font-bold underline" href="mailto:limonstudio14@gmail.com">limonstudio14@gmail.com</a>. I reply within 24 hours.
+      </p>
+<div class="flex flex-wrap gap-space-sm pt-space-xs">
+<a href="mailto:limonstudio14@gmail.com" class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-high text-on-surface hover:text-primary-container font-label-mono-sm text-label-mono-sm uppercase font-bold transition-colors"><span class="material-symbols-outlined text-[16px]">mail</span><span>Send Email</span></a>
+<button type="button" id="copy-email-btn" class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-high text-on-surface hover:text-primary-container font-label-mono-sm text-label-mono-sm uppercase font-bold transition-colors"><span class="material-symbols-outlined text-[16px]">content_copy</span><span>Copy Email</span></button>
+</div>
+</div>
+<!-- Inquiry Form -->
+<form id="inquiry-form" class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md shadow-xl" data-netlify="true" data-netlify-honeypot="bot-field" method="POST" action="/" name="client-inquiry">
+<input name="form-name" type="hidden" value="client-inquiry"/>
+<input name="subject" type="hidden" value="New project inquiry — LIMON portfolio"/>
+<p class="hidden"><label>Do not fill this out: <input name="bot-field"/></label></p>
+<!-- Full Name -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant" for="contact-name">Your Name *</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface placeholder:text-on-surface-variant/40 font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="contact-name" name="name" placeholder="e.g. Maya Thorne" required="" type="text"/>
+</div>
+<!-- Work Email -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant" for="contact-email">Email Address *</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface placeholder:text-on-surface-variant/40 font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="contact-email" name="email" placeholder="maya@company.com" required="" type="email"/>
+</div>
+<!-- Project / Company -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant" for="contact-business">Project or Company Name</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface placeholder:text-on-surface-variant/40 font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="contact-business" name="business" placeholder="e.g. Atelier Noir Studio" type="text"/>
+</div>
+<!-- Project Discipline Pills -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant">Scope of Work</span>
+<div class="flex flex-wrap gap-space-xs">
+<label class="cursor-pointer">
+<input checked="" class="peer hidden" name="scope_tier" type="radio" value="Starter Web"/>
+<span class="inline-block px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:font-bold font-label-mono-sm text-label-mono-sm transition-colors">
+              Starter Web
+            </span>
+</label>
+<label class="cursor-pointer">
+<input class="peer hidden" name="scope_tier" type="radio" value="Growth Platform"/>
+<span class="inline-block px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:font-bold font-label-mono-sm text-label-mono-sm transition-colors">
+              Growth Platform
+            </span>
+</label>
+<label class="cursor-pointer">
+<input class="peer hidden" name="scope_tier" type="radio" value="Custom Application"/>
+<span class="inline-block px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:font-bold font-label-mono-sm text-label-mono-sm transition-colors">
+              Custom Application
+            </span>
+</label>
+</div>
+</div>
+<!-- Dual Range / Estimated Budget (USD) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant">Estimated Budget Range (USD)</label>
+<div class="grid grid-cols-2 gap-space-sm items-center">
+<div class="flex items-center rounded-lg bg-surface-container-high px-space-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container font-bold mr-space-xs">$</span>
+<input id="budget-min" class="w-full py-space-sm bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none" inputmode="decimal" min="0" name="budget_min" placeholder="e.g. 1" step="any" type="number" aria-label="Minimum budget in USD"/>
+</div>
+<div class="flex items-center rounded-lg bg-surface-container-high px-space-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container font-bold mr-space-xs">$</span>
+<input id="budget-max" class="w-full py-space-sm bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none" inputmode="decimal" min="0" name="budget_max" placeholder="e.g. 8000" step="any" type="number" aria-label="Maximum budget in USD"/>
+</div>
+</div>
+<div class="flex justify-between font-label-mono-sm text-label-mono-sm text-on-surface-variant/60 pt-0.5">
+<span>Min Investment</span>
+<span>Max Ceiling</span>
+</div>
+<p class="font-label-mono-sm text-label-mono-sm text-on-surface-variant/60" id="budget-hint">Any amount works — you can leave either field empty.</p>
+</div>
+<!-- Details / Notes -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant" for="contact-notes">Project Scope &amp; Goals</label>
+<textarea class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface placeholder:text-on-surface-variant/40 font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container transition-all resize-none" id="contact-notes" name="notes" placeholder="Tell me about your brand, timeline, and what success looks like for this project..." rows="4"></textarea>
+</div>
+<!-- Submit CTA -->
+<button id="submit-btn" class="w-full py-space-md rounded-lg bg-primary-container text-on-primary-container font-label-mono-lg text-label-mono-lg uppercase font-bold flex items-center justify-center gap-space-xs shadow-[0_0_24px_rgba(202,243,0,0.3)] hover:shadow-[0_0_36px_rgba(202,243,0,0.45)] transition-all disabled:opacity-60 disabled:cursor-wait" type="submit">
+<span id="submit-label">Transmit Project Inquiry</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<div id="form-status" role="status" aria-live="polite" class="hidden rounded-lg p-space-md font-body-sm text-body-sm"></div>
+<div class="flex items-center justify-center gap-space-xs text-center">
+<span class="material-symbols-outlined text-primary-container text-[14px]">lock</span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant">Direct confidential transmission to Limon Studio</span>
+</div>
+</form>
+</section>
+</div>
+</main><footer class="w-full bg-surface-container-lowest pt-space-2xl pb-space-xl"><div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop"><div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-xl pb-space-xl"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md font-bold tracking-tight uppercase text-on-surface">LIMON</span><span class="font-label-mono-sm text-label-mono-sm text-primary-container uppercase px-space-xs py-0.5 rounded bg-surface-container-high">STUDIO</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Editorial interactive architectures and high-fidelity digital craftsmanship for forward-leaning ventures.</p></div><nav class="flex flex-wrap items-center gap-space-md md:gap-space-lg" data-active-classes="text-primary-container font-bold"><a class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="work" href="#work">Work</a><a class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#services">Services</a><a class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#about">About</a><a class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="process" href="#process">Process</a><a class="font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#contact">Contact</a></nav></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><p class="font-label-mono-sm text-label-mono-sm text-on-surface-variant">© <span id="year">2026</span> LIMON. All rights reserved.</p><a class="inline-flex items-center gap-space-xs font-label-mono-sm text-label-mono-sm uppercase text-on-surface-variant hover:text-primary-container transition-colors" href="#top"><span class="material-symbols-outlined text-[16px]">arrow_upward</span><span>Back to Top</span></a></div></div></footer>
+<div id="code-modal" class="fixed inset-0 z-[60] bg-surface-container-lowest/90 backdrop-blur-xl opacity-0 pointer-events-none transition-opacity duration-300 flex items-end sm:items-center justify-center p-margin" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+<div class="w-full max-w-xl max-h-[88vh] overflow-y-auto rounded-xl bg-surface-container shadow-2xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col"><span class="font-label-mono-sm text-label-mono-sm text-primary-container" id="modal-kicker">PROTOTYPE</span><h3 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase" id="modal-title">Project</h3></div>
+<button type="button" id="modal-close" aria-label="Close" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:text-primary-container flex-shrink-0"><span class="material-symbols-outlined text-[20px]">close</span></button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modal-desc"></p>
+<div class="rounded-lg bg-surface-container-lowest p-space-md overflow-x-auto"><pre class="font-label-mono-sm text-label-mono-sm text-on-surface whitespace-pre" id="modal-code" style="letter-spacing:0"></pre></div>
+<div class="flex flex-col sm:flex-row gap-space-sm">
+<button type="button" id="modal-copy" class="flex-1 inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface hover:text-primary-container font-label-mono-sm text-label-mono-sm uppercase font-bold transition-colors"><span class="material-symbols-outlined text-[16px]">content_copy</span><span>Copy Snippet</span></button>
+<button type="button" id="modal-request" class="flex-1 inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-mono-sm text-label-mono-sm uppercase font-bold"><span>Request Something Similar</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div id="toast" class="fixed left-1/2 -translate-x-1/2 bottom-6 z-[70] px-space-md py-space-sm rounded-lg bg-inverse-surface text-surface font-label-mono-sm text-label-mono-sm font-bold opacity-0 pointer-events-none translate-y-4"></div>
+<script>
+(function () {
+  'use strict';
+  var EMAIL = 'limonstudio14@gmail.com';
+  var $ = function (id) { return document.getElementById(id); };
+
+  // ---------- Toast ----------
+  var toastTimer;
+  function toast(msg) {
+    var t = $('toast'); if (!t) return;
+    t.textContent = msg;
+    t.classList.remove('opacity-0', 'translate-y-4');
+    t.classList.add('opacity-100', 'translate-y-0');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      t.classList.add('opacity-0', 'translate-y-4');
+      t.classList.remove('opacity-100', 'translate-y-0');
+    }, 2200);
+  }
+
+  function copyText(text, okMsg) {
+    function fallback() {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(ta);
+      toast(ok ? okMsg : 'Copy failed — please copy manually');
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { toast(okMsg); }, fallback);
+    } else { fallback(); }
+  }
+
+  // ---------- Year ----------
+  var yr = $('year'); if (yr) yr.textContent = new Date().getFullYear();
+
+  // ---------- Mobile drawer ----------
+  var drawer = $('mobile-nav-drawer');
+  function setScrollLock(lock) { document.documentElement.style.overflow = lock ? 'hidden' : ''; }
+  function openMenu() {
+    drawer.classList.remove('opacity-0', 'pointer-events-none');
+    drawer.classList.add('opacity-100', 'pointer-events-auto');
+    setScrollLock(true);
+  }
+  function closeMenu() {
+    drawer.classList.remove('opacity-100', 'pointer-events-auto');
+    drawer.classList.add('opacity-0', 'pointer-events-none');
+    if (!modalOpen) setScrollLock(false);
+  }
+  if ($('open-nav-btn')) $('open-nav-btn').addEventListener('click', openMenu);
+  if ($('close-nav-btn')) $('close-nav-btn').addEventListener('click', closeMenu);
+  document.querySelectorAll('.nav-drawer-link').forEach(function (l) { l.addEventListener('click', closeMenu); });
+
+  // ---------- Generated artwork (fallbacks / project 2 & 3 visuals) ----------
+  function svgUri(svg) { return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg); }
+  var ART = [
+    // 0: Noir Atelier
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"><defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b1c21"/><stop offset="1" stop-color="#0a0a0d"/></linearGradient></defs><rect width="800" height="500" fill="url(#a)"/>' +
+    '<rect x="60" y="60" width="200" height="300" rx="6" fill="#26272d"/><rect x="280" y="100" width="200" height="260" rx="6" fill="#303137"/><rect x="500" y="40" width="240" height="190" rx="6" fill="#1f2025"/><rect x="500" y="250" width="240" height="110" rx="6" fill="#caf300"/>' +
+    '<circle cx="160" cy="170" r="50" fill="#3a3b42"/><rect x="120" y="230" width="80" height="110" rx="10" fill="#3a3b42"/>' +
+    '<text x="60" y="420" font-family="Georgia,serif" font-size="44" fill="#e3e2e8" letter-spacing="8">NOIR ATELIER</text><text x="62" y="455" font-family="monospace" font-size="14" fill="#caf300" letter-spacing="4">HAUTE COUTURE • AW COLLECTION</text>' +
+    '<rect x="520" y="270" width="120" height="14" rx="3" fill="#2a3400"/><rect x="520" y="296" width="80" height="10" rx="3" fill="#596c00"/></svg>',
+    // 1: Bengal Table
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"><defs><radialGradient id="g" cx=".45" cy=".4" r=".9"><stop offset="0" stop-color="#6b4220"/><stop offset="1" stop-color="#170d07"/></radialGradient></defs><rect width="800" height="500" fill="url(#g)"/>' +
+    '<circle cx="230" cy="260" r="135" fill="#b8860b"/><circle cx="230" cy="260" r="116" fill="#8a2f12"/><circle cx="200" cy="235" r="16" fill="#e8a05a"/><circle cx="255" cy="280" r="20" fill="#e8a05a"/><circle cx="215" cy="300" r="12" fill="#f0c27a"/><circle cx="270" cy="230" r="10" fill="#4f7a2c"/>' +
+    '<circle cx="470" cy="190" r="80" fill="#f3e6c8"/><circle cx="470" cy="190" r="62" fill="#fff7e0"/>' +
+    '<ellipse cx="480" cy="360" rx="110" ry="58" fill="#d9a85a"/><ellipse cx="480" cy="352" rx="96" ry="46" fill="#e8bf7a"/>' +
+    '<rect x="610" y="70" width="160" height="300" rx="14" fill="#0d0e12" stroke="#caf300" stroke-width="2"/><rect x="626" y="92" width="128" height="10" rx="4" fill="#caf300"/><rect x="626" y="118" width="100" height="8" rx="4" fill="#444932"/><rect x="626" y="142" width="116" height="8" rx="4" fill="#444932"/><rect x="626" y="166" width="90" height="8" rx="4" fill="#444932"/><rect x="626" y="300" width="128" height="40" rx="8" fill="#caf300"/><text x="690" y="326" text-anchor="middle" font-family="monospace" font-size="13" font-weight="700" fill="#2a3400">ADD TO CART</text>' +
+    '<text x="50" y="460" font-family="Georgia,serif" font-size="40" fill="#f3e6c8" letter-spacing="4">THE BENGAL TABLE</text></svg>',
+    // 2: Nexora
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"><defs><linearGradient id="n" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14161d"/><stop offset="1" stop-color="#07080b"/></linearGradient><linearGradient id="l" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#caf300"/><stop offset="1" stop-color="#6ee7ff"/></linearGradient></defs><rect width="800" height="500" fill="url(#n)"/>' +
+    '<rect x="40" y="40" width="720" height="60" rx="10" fill="#1a1c24"/><rect x="60" y="62" width="120" height="16" rx="4" fill="#caf300"/>' +
+    '<rect x="40" y="120" width="220" height="110" rx="10" fill="#1a1c24"/><rect x="290" y="120" width="220" height="110" rx="10" fill="#1a1c24"/><rect x="540" y="120" width="220" height="110" rx="10" fill="#1a1c24"/>' +
+    '<text x="60" y="165" font-family="monospace" font-size="12" fill="#8f9378">LIQUIDITY</text><text x="60" y="205" font-family="monospace" font-size="30" font-weight="700" fill="#e3e2e8">$4.82M</text>' +
+    '<text x="310" y="165" font-family="monospace" font-size="12" fill="#8f9378">VOLUME 24H</text><text x="310" y="205" font-family="monospace" font-size="30" font-weight="700" fill="#e3e2e8">+12.4%</text>' +
+    '<text x="560" y="165" font-family="monospace" font-size="12" fill="#8f9378">ALERTS</text><text x="560" y="205" font-family="monospace" font-size="30" font-weight="700" fill="#caf300">3</text>' +
+    '<rect x="40" y="250" width="720" height="210" rx="10" fill="#1a1c24"/>' +
+    '<polyline points="60,420 130,380 200,400 270,330 340,350 410,290 480,310 550,260 620,280 690,230 740,250" fill="none" stroke="url(#l)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>' +
+    '<polyline points="60,440 130,420 200,430 270,390 340,400 410,370 480,380 550,350 620,365 690,330 740,340" fill="none" stroke="#444932" stroke-width="2"/></svg>'
+  ];
+  window.__art = function (i) { return svgUri(ART[i] || ART[0]); };
+
+  // ---------- Projects ----------
+  var projects = [
+    {
+      index: 'PROTOTYPE 01 / 03', category: 'E-Commerce • Editorial Concept', title: 'NOIR ATELIER',
+      name: 'Noir Atelier', sub: 'Luxury Fashion E-Commerce UI',
+      desc: 'Sculptural high-fashion online atelier featuring editorial masonry grids, custom typography sizing, and tactile product previews engineered for dark UI connoisseurs.',
+      img: 'https://lh3.googleusercontent.com/aida/AEtjO1Vs2B-rZkKOBH3-z006p_Yiu0NOnFuHzVRCeYeVwrOnvdqXtGSPvTDpyXg0QSf3rykq9WUw8b0BpdpQp_ygMX8Kx6X3ubngrvcEm7vFfJ8b2kEkhnjZxajZpBY2eBtxqj5AXLni7ALcCYGT0V1c387jI4RuEpTP0_WYhjBxH7gXuL-2xN3uajm21OunJ4Cr1G5CtWhONRRXXAKeDxxHnoq2rWY_0ruoyehcVXS0n8A2ukKllI4jMpU85A',
+      tags: ['Editorial Grid', 'Headless Layout', 'Mobile-First'], tier: 'Growth Platform',
+      code: '/* Editorial masonry grid */\n.grid-atelier {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 1rem;\n}\n@media (min-width: 900px) {\n  .grid-atelier { grid-template-columns: repeat(4, 1fr); }\n  .tile--tall   { grid-row: span 2; }\n}\n.tile img { aspect-ratio: 3 / 4; object-fit: cover; }'
+    },
+    {
+      index: 'PROTOTYPE 02 / 03', category: 'Culinary UX • Food Ordering', title: 'THE BENGAL TABLE',
+      name: 'The Bengal Table', sub: 'Artisan Culinary & Food Ordering UI',
+      desc: 'Artisan culinary website with interactive digital menu, real-time basket calculations, and frictionless mobile table-side ordering mechanics.',
+      img: null, tags: ['Food Ordering', 'Instant Cart', 'Responsive Menu'], tier: 'Growth Platform',
+      code: '// Instant cart total\nconst cart = new Map();\n\nfunction add(item) {\n  cart.set(item.id, (cart.get(item.id) || 0) + 1);\n  render();\n}\n\nfunction total(menu) {\n  let sum = 0;\n  cart.forEach((qty, id) => { sum += menu[id].price * qty; });\n  return sum;\n}'
+    },
+    {
+      index: 'PROTOTYPE 03 / 03', category: 'FinTech • Interactive Telemetry', title: 'NEXORA DIGITAL',
+      name: 'Nexora Digital', sub: 'Enterprise FinTech Real-Time Dashboard',
+      desc: 'Enterprise liquidity management dashboard with sub-second live financial sparklines, holographic depth metrics, and real-time alert notifications.',
+      img: null, tags: ['Data Viz', 'Live Telemetry', 'Component System'], tier: 'Custom Application',
+      code: '// Live sparkline feed\nconst points = [];\nsetInterval(() => {\n  points.push(nextTick());\n  if (points.length > 60) points.shift();\n  drawSparkline(canvas, points);\n}, 1000);'
+    }
+  ];
+  var current = 0;
+
+  function esc(t) { return String(t).replace(/[&<>"']/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]; }); }
+
+  function renderOthers() {
+    var box = $('project-others'); if (!box) return;
+    box.innerHTML = projects.map(function (p, i) {
+      if (i === current) return '';
+      return '<button type="button" data-switch="' + i + '" class="text-left p-space-md rounded-xl bg-surface-container flex items-center justify-between gap-space-md cursor-pointer hover:bg-surface-container-high transition-colors">' +
+        '<span class="flex items-center gap-space-md"><span class="font-label-mono-sm text-label-mono-sm text-primary-container font-bold">0' + (i + 1) + '</span>' +
+        '<span class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-on-surface">' + esc(p.name) + '</span>' +
+        '<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant">' + esc(p.sub) + '</span></span></span>' +
+        '<span class="material-symbols-outlined text-on-surface-variant text-[20px]">north_east</span></button>';
+    }).join('');
+    box.querySelectorAll('[data-switch]').forEach(function (b) {
+      b.addEventListener('click', function () { switchProject(parseInt(b.getAttribute('data-switch'), 10), true); });
+    });
+  }
+
+  function switchProject(idx, scrollIntoView) {
+    var p = projects[idx]; if (!p) return;
+    current = idx;
+    var img = $('project-hero-img');
+    if (img) {
+      img.onerror = function () { img.onerror = null; img.src = window.__art(idx); };
+      img.src = p.img || window.__art(idx);
+      img.alt = p.name + ' — ' + p.category;
+    }
+    $('project-index').textContent = p.index;
+    $('project-title').textContent = p.title;
+    $('project-desc').textContent = p.desc;
+    $('project-category-hud').textContent = p.category;
+    $('project-pills').innerHTML = p.tags.map(function (t) {
+      return '<span class="px-space-sm py-space-xs rounded-md bg-surface-container-high text-on-surface font-label-mono-sm text-label-mono-sm">' + esc(t) + '</span>';
+    }).join('');
+    document.querySelectorAll('.project-tab-btn').forEach(function (btn, i) {
+      var on = i === idx;
+      btn.classList.toggle('bg-primary-container', on);
+      btn.classList.toggle('text-on-primary-container', on);
+      btn.classList.toggle('font-bold', on);
+      btn.classList.toggle('bg-surface-container-high', !on);
+      btn.classList.toggle('text-on-surface-variant', !on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    renderOthers();
+    if (scrollIntoView) { var c = $('project-card'); if (c) c.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  }
+  window.switchProject = switchProject;
+
+  document.querySelectorAll('.project-tab-btn').forEach(function (btn) {
+    btn.addEventListener('click', function (e) { switchProject(parseInt(e.currentTarget.getAttribute('data-project'), 10)); });
+  });
+
+  // ---------- Code modal ----------
+  var modal = $('code-modal'), modalOpen = false;
+  function openModal() {
+    var p = projects[current];
+    $('modal-kicker').textContent = p.index;
+    $('modal-title').textContent = p.title;
+    $('modal-desc').textContent = p.desc;
+    $('modal-code').textContent = p.code;
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100', 'pointer-events-auto');
+    modalOpen = true; setScrollLock(true);
+  }
+  function closeModal() {
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.classList.remove('opacity-100', 'pointer-events-auto');
+    modalOpen = false; setScrollLock(false);
+  }
+  if ($('explore-btn')) $('explore-btn').addEventListener('click', openModal);
+  $('modal-close').addEventListener('click', closeModal);
+  modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+  $('modal-copy').addEventListener('click', function () { copyText(projects[current].code, 'Snippet copied'); });
+  $('modal-request').addEventListener('click', function () {
+    var tier = projects[current].tier;
+    closeModal(); selectTier(tier);
+    var n = $('contact-notes');
+    if (n && !n.value) n.value = 'I like your "' + projects[current].name + '" concept and would like something similar.';
+    var c = $('contact'); if (c) c.scrollIntoView({ behavior: 'smooth' });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { if (modalOpen) closeModal(); closeMenu(); }
+  });
+
+  // ---------- Pricing buttons -> preselect tier ----------
+  function selectTier(tier) {
+    document.querySelectorAll('input[name="scope_tier"]').forEach(function (r) { r.checked = (r.value === tier); });
+  }
+  document.querySelectorAll('.tier-btn').forEach(function (a) {
+    a.addEventListener('click', function () { selectTier(a.getAttribute('data-tier')); });
+  });
+
+  // ---------- Copy email ----------
+  if ($('copy-email-btn')) $('copy-email-btn').addEventListener('click', function () { copyText(EMAIL, 'Email copied'); });
+
+  // ---------- Scroll spy (header nav) ----------
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('header nav a[data-path]'));
+  var ids = ['work', 'services', 'process', 'pricing', 'about', 'contact'];
+  var activeClasses = ['text-primary-container', 'font-bold'];
+  function setActive(id) {
+    navLinks.forEach(function (a) {
+      var on = a.getAttribute('data-path') === id;
+      activeClasses.forEach(function (c) { a.classList.toggle(c, on); });
+      a.classList.toggle('text-on-surface-variant', !on);
+    });
+  }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) setActive(en.target.id); });
+    }, { rootMargin: '-35% 0px -55% 0px' });
+    ids.forEach(function (id) { var el = $(id); if (el) io.observe(el); });
+  }
+
+  // ---------- Inquiry form ----------
+  var form = $('inquiry-form'), statusBox = $('form-status');
+  var minEl = $('budget-min'), maxEl = $('budget-max'), hint = $('budget-hint');
+
+  function num(v) { if (v === '' || v == null) return NaN; var n = Number(v); return isFinite(n) ? n : NaN; }
+  function checkBudget() {
+    var mn = num(minEl.value), mx = num(maxEl.value);
+    hint.textContent = (!isNaN(mn) && !isNaN(mx) && mn > mx)
+      ? 'Min is higher than max — I will swap them automatically when you send.'
+      : 'Any amount works — you can leave either field empty.';
+  }
+  minEl.addEventListener('input', checkBudget);
+  maxEl.addEventListener('input', checkBudget);
+
+  function showStatus(kind, html) {
+    statusBox.className = 'rounded-lg p-space-md font-body-sm text-body-sm ' +
+      (kind === 'ok' ? 'bg-primary-container text-on-primary-container' : 'bg-error-container text-on-error-container');
+    statusBox.innerHTML = html; statusBox.classList.remove('hidden');
+    statusBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  function buildMailto(d) {
+    var body = 'Name: ' + d.name + '\nEmail: ' + d.email + '\nProject/Company: ' + (d.business || '-') +
+      '\nScope: ' + d.scope + '\nBudget (USD): ' + (d.min || '-') + ' to ' + (d.max || '-') + '\n\n' + (d.notes || '');
+    return 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('New project inquiry — ' + d.name) + '&body=' + encodeURIComponent(body);
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var mn = num(minEl.value), mx = num(maxEl.value);
+    if (!isNaN(mn) && !isNaN(mx) && mn > mx) { var t = minEl.value; minEl.value = maxEl.value; maxEl.value = t; checkBudget(); }
+
+    var fd = new FormData(form);
+    var scopeEl = form.querySelector('input[name="scope_tier"]:checked');
+    var d = {
+      name: (fd.get('name') || '').toString().trim(), email: (fd.get('email') || '').toString().trim(),
+      business: (fd.get('business') || '').toString().trim(), scope: scopeEl ? scopeEl.value : '',
+      min: minEl.value, max: maxEl.value, notes: (fd.get('notes') || '').toString().trim()
+    };
+    var btn = $('submit-btn'), label = $('submit-label');
+    btn.disabled = true; label.textContent = 'Sending…';
+
+    var body = new URLSearchParams(fd).toString();
+    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body })
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        form.reset(); selectTier('Starter Web'); checkBudget();
+        showStatus('ok', '<strong>Transmission received.</strong> Thanks ' + esc(d.name) + ' — I will reply to ' + esc(d.email) + ' within 24 hours.');
+      })
+      .catch(function () {
+        showStatus('err', '<strong>Could not send the form from this page.</strong> Please <a class="underline font-bold" href="' + buildMailto(d) + '">click here to email me directly</a> — your details are pre-filled.');
+      })
+      .then(function () { btn.disabled = false; label.textContent = 'Transmit Project Inquiry'; });
+  });
+
+  // init
+  switchProject(0);
+  setActive('work');
+})();
+
+</script></body></html>
